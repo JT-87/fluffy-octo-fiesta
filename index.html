@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justyns 1Liners</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f2f2f2;
+      position: relative;
+    }
+    .banner {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #4CAF50;
+      white-space: nowrap;
+    }
+    .container {
+      text-align: center;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 15px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <marquee class="banner" direction="left" scrollamount="5">Built with GPT on my lunch break</marquee>
+  <div class="container">
+    <h1>Justyn's Rubbish 1Liners</h1>
+    <p id="joke">Click the button to generate a 1Liner!</p>
+    <button onclick="generateJoke()">Generate a LOL</button>
+  </div>
+  <script>
+    const jokeElement = document.getElementById('joke');
+
+    function generateJoke() {
+      // Replace the array items with your own dad jokes.
+      const jokes = [
+         "Why did the tomato turn red? Because it saw the salad dressing!.",
+        "I tried to catch fog yesterday, but I mist.",
+        "My wife told me I should do lunges to stay in shape. That would be a big step forward.",
+        "I'm on a seafood diet, I see food, and I eat it.",
+        "Why don't scientists trust atoms? Because they make up everything.",
+        "Parallel lines have so much in common. It's a shame they'll never meet.",
+        "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+        "I used to play piano by ear, but now I use my hands.",
+        "Did you hear about the guy who invented Lifesavers? He made a mint!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field.",
+        "I was going to tell a time-travel joke, but you guys didn't like it.",
+        "How do you organize a space party? You planet.",
+        "Did you hear about the kidnapping at the playground? They woke up.",
+        "Why don't oysters donate to charity? Because they're shellfish.",
+        "I'm reading a book on anti-gravity. It's impossible to put down!",
+        "Why did the coffee file a police report? It got mugged.",
+        "I used to be addicted to soap, but I'm clean now.",
+        "What's orange and sounds like a parrot? A carrot.",
+        "A bicycle can't stand on its own because it's two-tired.",
+        "What do you call fake spaghetti? An impasta!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field.",
+        "Why don't some couples go to the gym? Because some relationships don't work out."
+      ];
+
+      const randomIndex = Math.floor(Math.random() * jokes.length);
+      jokeElement.textContent = jokes[randomIndex];
+    }
+  </script>
+</body>
+</html>
